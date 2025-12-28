@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Nails Match</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json"> <link rel="apple-touch-icon" href="icon.png"> </head>
+<body>
+
+    <div class="app-container">
+        <header>
+            <h2>💅 Nail Picker</h2>
+            <div class="category-selector">
+                <select id="style-select">
+                    <option value="french nail art">Francesas (Clásicas)</option>
+                    <option value="christmas nails">Navideñas</option>
+                    <option value="acrylic nails trendy">Tendencia / Moda</option>
+                    <option value="minimalist nails">Minimalistas</option>
+                </select>
+            </div>
+        </header>
+
+        <div class="card-stack" id="card-stack">
+            <div class="loading-msg">Cargando estilos...</div>
+        </div>
+
+        <div class="actions">
+            <button id="btn-nope" class="btn-circle nope">✖️</button>
+            <button id="btn-love" class="btn-circle love">❤️</button>
+        </div>
+
+        <div class="favorites-section">
+            <h3>Guardadas</h3>
+            <div id="favorites-list" class="fav-grid"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
